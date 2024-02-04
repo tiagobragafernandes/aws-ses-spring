@@ -1,0 +1,39 @@
+{
+	"info": {
+		"_postman_id": "6a7af843-0c0f-4cd3-9601-bdbf1cf2412b",
+		"name": "Email Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32205599",
+		"_collection_link": "https://orange-moon-811618-1.postman.co/workspace/New-Team-Workspace~be39dd79-23d3-4dab-bbd2-4eecc7ccd15b/collection/32205599-6a7af843-0c0f-4cd3-9601-bdbf1cf2412b?action=share&source=collection_link&creator=32205599"
+	},
+	"item": [
+		{
+			"name": "Send E-mail",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"from\": \"email@gmail.com\",\r\n    \"to\": \"email@gmail.com\",\r\n    \"subject\": \"Teste de envio de email SES\",\r\n    \"content\": \"<h1>Hello World!</h1>\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/email",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"email"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
